@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="contenido">
+        <header class="logo">
+            <img src="img/logo.png">
+        </header>
+        <main>
+            <section>
+                <textarea type="text" class="ingrese-texto input-texto" cols="40" rows="6"
+                    placeholder="Ingrese el texto aqui"></textarea>
+                <div class="frame1">
+                    <img class="vector" src="img/vector.png" alt="Vector">
+                    <div class="letras-minusculas">Solo letras minúsculas y sin acentos.</div>
+                </div>
+                <div class="frame3 botones">
+                    <button id="encriptar" class="btn-encriptar">
+                        <div class="btn-encriptar-texto">
+                            Encriptar
+                        </div>
+                    </button>
+                    <button id="desencriptar" class="btn-desencriptar">
+                        <div class="btn-desencriptar-texto">Desencriptar</div>
+                    </button>
+                </div>
+            </section>
+            <section>
+                <div class="rectangulo"></div>
+                <div id="mostrar">
+                    <textarea id="mensaje" class="texto-area2" cols="18" rows="8"></textarea>
+                    <button class="copiar">
+                        <div class="btn-copiar-texto"> Copiar</div>
+                    </button>
+                </div>
+                <div id="ocultar">
+                    <img class="box-muneco" src="img/muneco.png" alt="Muneco que desaparece">
+                    <div class="frame5">
+                        <div class="mensaje1">Ningún mensaje fue encontrado</div>
+                        <div class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">Alura ONE © Anderson Guarnizo - 2022</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
